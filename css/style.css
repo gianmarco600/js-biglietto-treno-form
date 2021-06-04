@@ -4,11 +4,50 @@
     padding: 0;
 }
 
+header{
+    text-align: center;
+}
+
 body{
     background-color: #b91450;
 }
 
+h3{
+    color: #b91450;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.m_auto{
+    margin: 0 auto;
+}
+
 ._box{
-    border-radius: 30px;
+    border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    background-color: white;
+}
+
+._btn{
+    max-width: 250px;
+    background-color: #b91450;
+    color:white;
+    border: 1px solid #b91450;
+}
+
+._btn:hover{
+    border: 1px solid #b91450;
+}
+
+._bordered{
+    border: 1px solid black;
+}
+
+._bg{
+    background-color: #b91450;
+}
+
+.hidden{
+    display: block;
 }
