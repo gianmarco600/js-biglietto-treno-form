@@ -20,7 +20,7 @@ document.getElementById('genera').addEventListener('click' , function(){
                 document.getElementById("km").value="";
             }
             if(isNaN(age)){
-                alert("Insarire input &#224; valido");
+                alert("Insarire input età valido");
                 document.getElementById("ageBox").classList.add("_bg2"); 
                 document.getElementById("age").value="";
             }
