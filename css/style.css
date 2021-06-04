@@ -18,6 +18,10 @@ h3{
     font-weight: 600;
 }
 
+span{
+    font-weight: 600;
+}
+
 .m_auto{
     margin: 0 auto;
 }
@@ -44,10 +48,31 @@ h3{
     border: 1px solid black;
 }
 
+._white{
+    color: white;
+}
+
 ._bg{
     background-color: #b91450;
 }
 
-.hidden{
-    display: block;
+._bg2{
+    background-color: #b914506e;
+    color: black;
+}
+
+._uppercase{
+    text-transform: uppercase;
+}
+
+._hidden{
+    display: none;
+}
+
+.output{
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #700d32;
+    border-radius: 5px;
+    color: #b91450;
 }

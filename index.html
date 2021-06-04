@@ -11,54 +11,54 @@
 </head>
 <body>
     <header>
-        <h1 class="mt-3">calcola il prezzo del tuo biglietto</h1>
+        <h1 class="mt-3 _uppercase">calcola il prezzo del tuo biglietto</h1>
     </header>
     <section class="my-4">
         <div class="container-sm _box">
             <div class="row justify-content-center">
-                <div class="col text-center">
+                <div class="col text-center py-2">
                     <h3>Nome Cognome</h3>
                     <input id="nome" type="text" value="">
                 </div>
-                <div class="col text-center">
+                <div id="kmBox" class="col text-center py-2">
                     <h3>Km da percorrere</h3>
                     <input id="km" type="text" value="">
                 </div>
-                <div class="col text-center">
+                <div id="ageBox" class="col text-center py-2">
                     <h3>Fascia d'et&#224;</h3>
                     <input id="age" type="number" value="">
                 </div>
             </div>
             <div class="m_auto w-50 row justify-content-around my-5">
-                <button type="button" class="btn btn-light col _btn ">Genera</button>
-                <button type="button" id="" class="btn btn-light col _btn ">Annulla</button>
+                <button type="button" id="genera" class="btn btn-light col _btn ">Genera</button>
+                <button type="button" id="annulla" class="btn btn-light col _btn ">Annulla</button>
             </div>    
         </div>    
     </section>
-    <section class="text-center hidden">
-        <h2 class="mt-3 text-center">il tuo biglietto</h2>
+    <section id="biglietto" class="text-center _hidden">
+        <h2 class="my-3 text-center _uppercase">il tuo biglietto</h2>
         <div class="container-sm _box">
-            <h3>dettaglio passeggeri</h3>
-            <div class="row _bordered ">
-                <div class="col-4 _bg">
-                    <span class="mb-5">NOME PASSEGGERO</span>
-                    <div id="nome"></div>
+            <h3>Dettaglio passeggeri</h3>
+            <div class="mt-4 row _bordered">
+                <div class="col-4 _bg p-2">
+                    <span class="my-5 _white">NOME PASSEGGERO</span>
+                    <div class="output my-3" id="nomeOut"></div>
                 </div>
-                <div class="col-2">
-                    <span class="mb-5">Offerta</span>
-                    <div id="offerta"></div>
+                <div class="col-2 p-2">
+                    <span class="my-5">Offerta</span>
+                    <div class="output my-3" id="offertaOut"></div>
                 </div>
-                <div class="col-2">
-                    <span class="mb-5">Carrozza</span>
-                    <div id="carrozza"></div>
+                <div class="col-2 p-2">
+                    <span class="my-5">Carrozza</span>
+                    <div class="output my-3" id="carrozzaOut"></div>
                 </div>
-                <div class="col-2">
-                    <span class="mb-5">Codice CP</span>
-                    <div id="cpc"></div>
+                <div class="col-2 p-2">
+                    <span class="my-5">Codice CP</span>
+                    <div class="output my-3" id="cpcOut"></div>
                 </div>
-                <div class="col-2">
-                    <span class="mb-5">Costo biglietto</span>
-                    <div id="totale"></div>
+                <div class="col-2 p-2">
+                    <span class="my-5">Costo biglietto</span>
+                    <div class="output my-3" id="totaleOut"></div>
                 </div>
             </div>
         </div>
