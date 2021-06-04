@@ -74,6 +74,8 @@ document.getElementById('annulla').addEventListener('click' , function(){
     document.getElementById("nome").value="";
     document.getElementById("km").value="";
     document.getElementById("age").value="";
+    document.getElementById("kmBox").classList.remove("_bg2");
+    document.getElementById("ageBox").classList.remove("_bg2");
     count=0;
     document.getElementById("biglietto").classList.add("_hidden"); 
 });
