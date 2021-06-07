@@ -37,6 +37,7 @@ document.getElementById('genera').addEventListener('click' , function(){
             sconto = 0;
 
             // tipo offerta
+            console.log(age);
             if (age <= 18){
                 prezzo = prezzo * 0.8;
                 sconto = 1;
@@ -48,7 +49,7 @@ document.getElementById('genera').addEventListener('click' , function(){
                 sconto = 2;
                 document.getElementById("offertaOut").innerHTML = "Offerta over 65";
             }
-            else{
+            if (sconto == 0){
                 document.getElementById("offertaOut").innerHTML = "Nessuna offerta attiva";
             }
             // genera carrozza
@@ -76,6 +77,7 @@ document.getElementById('annulla').addEventListener('click' , function(){
     document.getElementById("age").value="";
     document.getElementById("kmBox").classList.remove("_bg2");
     document.getElementById("ageBox").classList.remove("_bg2");
-    count=0;
+    count = 0;
+    sconto = 0;
     document.getElementById("biglietto").classList.add("_hidden"); 
 });
