@@ -20,7 +20,7 @@ document.getElementById('genera').addEventListener('click' , function(){
                 document.getElementById("km").value="";
             }
             if(isNaN(age)){
-                alert("Insarire input età valido");
+                alert("Inserire input età valido");
                 document.getElementById("ageBox").classList.add("_bg2"); 
                 document.getElementById("age").value="";
             }
@@ -29,29 +29,27 @@ document.getElementById('genera').addEventListener('click' , function(){
             document.getElementById("ageBox").classList.remove("_bg2"); 
             document.getElementById("kmBox").classList.remove("_bg2");
             document.getElementById("biglietto").classList.remove("_hidden"); 
-            var sconto = 0;
+            var sconto = "nessuna offerta attiva";
             var prezzo = 0;
             // stampa nome
             document.getElementById("nomeOut").innerHTML = nome;
             prezzo = 0.21 * km;
-            sconto = 0;
 
             // tipo offerta
-            console.log(age);
             if (age <= 18){
                 prezzo = prezzo * 0.8;
-                sconto = 1;
-                document.getElementById("offertaOut").innerHTML = "Offerta minorenni";
+                sconto = "Offerta minorenni";
+                // document.getElementById("offertaOut").innerHTML = "Offerta minorenni";
             }
 
             if (age >= 65){
                 prezzo -= prezzo * 0.6;
-                sconto = 2;
-                document.getElementById("offertaOut").innerHTML = "Offerta over 65";
+                sconto = "Offerta over 65";
+                // document.getElementById("offertaOut").innerHTML = "Offerta over 65";
             }
-            if (sconto == 0){
-                document.getElementById("offertaOut").innerHTML = "Nessuna offerta attiva";
-            }
+            
+            document.getElementById("offertaOut").innerHTML = sconto;
+            
             // genera carrozza
             var carrozza = Math.floor(Math.random()*9) + 1;
             document.getElementById("carrozzaOut").innerHTML = carrozza;
@@ -78,6 +76,6 @@ document.getElementById('annulla').addEventListener('click' , function(){
     document.getElementById("kmBox").classList.remove("_bg2");
     document.getElementById("ageBox").classList.remove("_bg2");
     count = 0;
-    sconto = 0;
+    sconto = "nessuna offerta attiva";
     document.getElementById("biglietto").classList.add("_hidden"); 
 });
